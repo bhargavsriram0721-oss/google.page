@@ -1,575 +1,446 @@
 /* =========================
    RESET
 ========================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: #ffffff;
-    color: #202124;
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:#fff;
+    color:#202124;
 }
 
 /* =========================
    HEADER
 ========================= */
-header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px 25px;
+header{
+    display:flex;
+    justify-content:flex-end;
+    padding:15px 25px;
 }
 
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 18px;
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:18px;
 }
 
-.header-right a {
-    text-decoration: none;
-    color: #202124;
-    font-size: 14px;
+.header-right a{
+    text-decoration:none;
+    color:#202124;
+    font-size:14px;
 }
 
-.header-right a:hover {
-    text-decoration: underline;
+.header-right a:hover{
+    text-decoration:underline;
 }
 
 /* =========================
-   GOOGLE APPS MENU
+   APPS MENU
 ========================= */
-.apps-container {
-    position: relative;
+.apps-container{
+    position:relative;
 }
 
-.menu-btn {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background: transparent;
-    border-radius: 50%;
-    cursor: pointer;
+.menu-btn{
+    width:40px;
+    height:40px;
+    border:none;
+    background:transparent;
+    border-radius:50%;
+    cursor:pointer;
 
-    display: grid;
-    grid-template-columns: repeat(3, 4px);
-    grid-template-rows: repeat(3, 4px);
-    gap: 4px;
-    place-content: center;
+    display:grid;
+    grid-template-columns:repeat(3,4px);
+    grid-template-rows:repeat(3,4px);
+    gap:4px;
+    place-content:center;
 }
 
-.menu-btn:hover {
-    background: #f1f3f4;
+.menu-btn:hover{
+    background:#f1f3f4;
 }
 
-.menu-btn span {
-    width: 4px;
-    height: 4px;
-    background: #5f6368;
-    border-radius: 50%;
+.menu-btn span{
+    width:4px;
+    height:4px;
+    background:#5f6368;
+    border-radius:50%;
 }
 
-/* Dropdown Menu */
-.apps-dropdown {
-    position: absolute;
-    top: 50px;
-    right: 0;
+.apps-dropdown{
+    position:absolute;
+    top:50px;
+    right:0;
 
-    width: 300px;
-    padding: 20px;
+    width:300px;
+    padding:20px;
 
-    background: white;
-    border-radius: 24px;
+    background:#fff;
+    border-radius:24px;
 
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
 
-    display: none;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    display:none;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
 
-    z-index: 100;
+    z-index:100;
 }
 
-.apps-container:hover .apps-dropdown {
-    display: grid;
+.apps-container:hover .apps-dropdown{
+    display:grid;
 }
 
-.apps-dropdown a {
-    text-decoration: none;
-    color: #202124;
+.apps-dropdown a{
+    text-decoration:none;
+    color:#202124;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 
-    padding: 12px;
-    border-radius: 12px;
+    padding:12px;
+    border-radius:12px;
 }
 
-.apps-dropdown a:hover {
-    background: #f1f3f4;
+.apps-dropdown a:hover{
+    background:#f1f3f4;
 }
 
-.app-icon {
-    font-size: 30px;
-    margin-bottom: 8px;
+.app-icon{
+    font-size:30px;
+    margin-bottom:8px;
 }
 
 /* =========================
    SIGN IN BUTTON
 ========================= */
-.signin-btn {
-    background: #1a73e8;
-    color: white !important;
+.signin-btn{
+    background:#1a73e8;
+    color:#fff !important;
 
-    padding: 10px 22px;
+    padding:10px 22px;
+    border-radius:25px;
 
-    border-radius: 25px;
-    text-decoration: none;
+    text-decoration:none;
 }
 
-.signin-btn:hover {
-    background: #1765cc;
-    text-decoration: none !important;
+.signin-btn:hover{
+    background:#1765cc;
+    text-decoration:none !important;
 }
 
 /* =========================
    MAIN
 ========================= */
-main {
-    flex: 1;
+main{
+    flex:1;
 
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction:column;
 
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
 
-    padding: 20px;
+    padding:20px;
 }
 
 /* =========================
    GOOGLE LOGO
 ========================= */
-.google-logo {
-    width: 272px;
-    height: 92px;
-    
-    display: block;
-    margin: 0 auto 30px;
+.google-logo{
+    width:272px;
+    height:auto;
+    margin-bottom:30px;
 }
 
 /* =========================
    SEARCH BAR
 ========================= */
-.search-box {
-    width: 100%;
-    max-width: 900px;
-    height: 58px;
+.search-box{
+    width:100%;
+    max-width:700px;
+    height:58px;
 
-    background: #fff;
+    background:#fff;
 
-    border: 1px solid #dfe1e5;
-    border-radius: 30px;
+    border:1px solid #dfe1e5;
+    border-radius:30px;
 
-    display: flex;
-    align-items: center;
+    display:flex;
+    align-items:center;
 
-    padding: 0 18px;
+    padding:0 18px;
 
-    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.08);
+    box-shadow:0 1px 6px rgba(32,33,36,0.08);
 
-    margin-bottom: 30px;
+    margin-bottom:30px;
 }
 
 .search-box:hover,
-.search-box:focus-within {
-    box-shadow: 0 2px 12px rgba(32, 33, 36, 0.20);
+.search-box:focus-within{
+    box-shadow:0 2px 12px rgba(32,33,36,0.20);
 }
 
-.search-icon {
-    color: #5f6368;
-    font-size: 24px;
-    margin-right: 15px;
+.search-icon{
+    color:#5f6368;
+    font-size:24px;
+    margin-right:15px;
 }
 
-.search-box input {
-    flex: 1;
+.search-box input{
+    flex:1;
 
-    border: none;
-    outline: none;
+    border:none;
+    outline:none;
 
-    font-size: 18px;
-    color: #202124;
+    font-size:16px;
 }
 
-.search-box input::placeholder {
-    color: #5f6368;
+.search-actions{
+    display:flex;
+    align-items:center;
+    gap:18px;
 }
 
-.search-actions {
-    display: flex;
-    align-items: center;
-    gap: 18px;
+.icon{
+    font-size:24px;
+    cursor:pointer;
 }
 
-.icon {
-    font-size: 24px;
-    color: #202124;
-    cursor: pointer;
+.ai-btn{
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    border:none;
+    background:#f1f3f4;
+
+    padding:10px 16px;
+
+    border-radius:25px;
+
+    cursor:pointer;
 }
 
-.icon:hover {
-    color: #1a73e8;
-}
-
-/* AI Mode Button */
-.ai-btn {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-
-    border: none;
-    background: #f1f3f4;
-
-    padding: 10px 16px;
-
-    border-radius: 25px;
-
-    cursor: pointer;
-
-    font-size: 14px;
-}
-
-.ai-btn:hover {
-    background: #e8eaed;
+.ai-btn:hover{
+    background:#e8eaed;
 }
 
 /* =========================
    BUTTONS
 ========================= */
-.buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
 
-    justify-content: center;
+    justify-content:center;
 }
 
-.buttons button {
-    background: #f8f9fa;
+.buttons button{
+    background:#f8f9fa;
 
-    border: 1px solid #f8f9fa;
+    border:1px solid #f8f9fa;
 
-    padding: 10px 18px;
+    padding:10px 18px;
 
-    border-radius: 4px;
+    border-radius:4px;
 
-    cursor: pointer;
-    font-size: 14px;
+    cursor:pointer;
 }
 
-.buttons button:hover {
-    border: 1px solid #dadce0;
+.buttons button:hover{
+    border:1px solid #dadce0;
 }
 
 /* =========================
-   LANGUAGE
+   LANGUAGES
 ========================= */
-.language {
-    margin-top: 30px;
-    font-size: 13px;
+.language{
+    margin-top:30px;
+    font-size:13px;
+    text-align:center;
 }
 
-.language a {
-    text-decoration: none;
-    color: #1a0dab;
-    margin-left: 8px;
+.language a{
+    text-decoration:none;
+    color:#1a0dab;
+    margin-left:8px;
 }
 
-.language a:hover {
-    text-decoration: underline;
+.language a:hover{
+    text-decoration:underline;
 }
 
 /* =========================
    FOOTER
 ========================= */
-footer {
-    background: #f2f2f2;
+footer{
+    background:#f2f2f2;
 }
 
-.country {
-    padding: 15px 30px;
-    border-bottom: 1px solid #dadce0;
-
-    color: #70757a;
+.country{
+    padding:15px 30px;
+    border-bottom:1px solid #dadce0;
+    color:#70757a;
 }
 
-.footer-links {
-    display: flex;
-    justify-content: space-between;
+.footer-links{
+    display:flex;
+    justify-content:space-between;
 
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 
-    padding: 15px 30px;
+    padding:15px 30px;
 }
 
 .footer-left,
-.footer-right {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+.footer-right{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
-.footer-links a {
-    text-decoration: none;
-    color: #70757a;
-    font-size: 14px;
+.footer-links a{
+    text-decoration:none;
+    color:#70757a;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-
-    .google-logo {
-        width: 220px;
-        height: auto;
-    }
-
-    header {
-        padding: 15px;
-    }
-
-    .search-box {
-        height: 52px;
-    }
-
-    .search-box input {
-        font-size: 16px;
-    }
-
-    .ai-btn {
-        display: none;
-    }
-
-    .apps-dropdown {
-        width: 260px;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    .footer-left,
-    .footer-right {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .google-logo {
-        width: 180px;
-        height: auto;
-    }
-
-    .header-right {
-        gap: 12px;
-    }
-
-    .header-right a {
-        font-size: 13px;
-    }
-
-    .signin-btn {
-        padding: 8px 18px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .buttons button {
-        width: 90%;
-        max-width: 250px;
-    }
-
-    .apps-dropdown {
-        width: 240px;
-        right: -40px;
-    }
+.footer-links a:hover{
+    text-decoration:underline;
 }
 
 /* =========================
    TABLET VIEW
 ========================= */
-@media screen and (max-width: 768px) {
+@media (max-width:768px){
 
-    header {
-        padding: 15px;
+    .google-logo{
+        width:200px;
     }
 
-    .google-logo {
-        width: 200px;
-        height: auto;
+    .search-box{
+        max-width:95%;
+        height:52px;
     }
 
-    .search-box {
-        width: 95%;
-        max-width: 100%;
-        height: 52px;
-        padding: 0 12px;
+    .search-box input{
+        font-size:15px;
     }
 
-    .search-box input {
-        font-size: 15px;
+    .ai-btn{
+        display:none;
     }
 
-    .search-actions {
-        gap: 10px;
-    }
-
-    .icon {
-        font-size: 22px;
-    }
-
-    .ai-btn {
-        display: none;
-    }
-
-    .apps-dropdown {
-        width: 250px;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
+    .footer-links{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
     }
 
     .footer-left,
-    .footer-right {
-        justify-content: center;
+    .footer-right{
+        justify-content:center;
     }
 }
 
 /* =========================
    MOBILE VIEW
 ========================= */
-@media screen and (max-width: 480px) {
+@media (max-width:480px){
 
-    header {
-        padding: 12px 15px;
+    header{
+        padding:12px 16px;
     }
 
-    .header-right {
-        gap: 10px;
+    .header-right{
+        gap:10px;
     }
 
-    .header-right a {
-        font-size: 12px;
+    .header-right a{
+        font-size:13px;
     }
 
-    .menu-btn {
-        width: 35px;
-        height: 35px;
+    .signin-btn{
+        padding:8px 14px;
+        font-size:13px;
     }
 
-    .signin-btn {
-        padding: 8px 14px;
-        font-size: 13px;
+    .google-logo{
+        width:150px;
+        margin-bottom:25px;
     }
 
-    .google-logo {
-        width: 150px;
-        height: auto;
-        margin-bottom: 25px;
+    .search-box{
+        width:95%;
+        height:50px;
+        padding:0 12px;
+        border-radius:25px;
     }
 
-    .search-box {
-        width: 100%;
-        height: 48px;
-        padding: 0 10px;
-        border-radius: 24px;
-        margin-bottom: 25px;
+    .search-icon{
+        font-size:20px;
+        margin-right:10px;
     }
 
-    .search-icon {
-        font-size: 20px;
-        margin-right: 8px;
+    .search-box input{
+        font-size:14px;
     }
 
-    .search-box input {
-        font-size: 14px;
+    .search-actions{
+        gap:10px;
     }
 
-    .search-actions {
-        gap: 8px;
+    .icon{
+        font-size:20px;
     }
 
-    .icon {
-        font-size: 20px;
+    .ai-btn{
+        display:none;
     }
 
-    /* Hide AI button on phones */
-    .ai-btn {
-        display: none;
+    /* Hide Apps Menu on phones */
+    .apps-container{
+        display:none;
     }
 
-    /* Hide Gmail and Images links */
-    .header-right a:not(.signin-btn) {
-        display: none;
+    .buttons{
+        flex-direction:column;
+        width:100%;
+        align-items:center;
+        gap:10px;
     }
 
-    .buttons {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
+    .buttons button{
+        width:90%;
+        max-width:280px;
     }
 
-    .buttons button {
-        width: 100%;
-        max-width: 250px;
-        margin: 0 auto;
+    .language{
+        line-height:2;
+        padding:0 15px;
     }
 
-    .language {
-        text-align: center;
-        line-height: 2;
-        padding: 0 15px;
+    .country{
+        text-align:center;
     }
 
-    .country {
-        text-align: center;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
+    .footer-links{
+        flex-direction:column;
+        gap:12px;
+        text-align:center;
     }
 
     .footer-left,
-    .footer-right {
-        justify-content: center;
-    }
-
-    .apps-dropdown {
-        width: 220px;
-        right: 0;
+    .footer-right{
+        justify-content:center;
     }
 }
