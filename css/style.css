@@ -413,3 +413,163 @@ footer {
         right: -40px;
     }
 }
+
+/* =========================
+   TABLET VIEW
+========================= */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .google-logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .search-box {
+        width: 95%;
+        max-width: 100%;
+        height: 52px;
+        padding: 0 12px;
+    }
+
+    .search-box input {
+        font-size: 15px;
+    }
+
+    .search-actions {
+        gap: 10px;
+    }
+
+    .icon {
+        font-size: 22px;
+    }
+
+    .ai-btn {
+        display: none;
+    }
+
+    .apps-dropdown {
+        width: 250px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-left,
+    .footer-right {
+        justify-content: center;
+    }
+}
+
+/* =========================
+   MOBILE VIEW
+========================= */
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 12px 15px;
+    }
+
+    .header-right {
+        gap: 10px;
+    }
+
+    .header-right a {
+        font-size: 12px;
+    }
+
+    .menu-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .signin-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    .google-logo {
+        width: 150px;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .search-box {
+        width: 100%;
+        height: 48px;
+        padding: 0 10px;
+        border-radius: 24px;
+        margin-bottom: 25px;
+    }
+
+    .search-icon {
+        font-size: 20px;
+        margin-right: 8px;
+    }
+
+    .search-box input {
+        font-size: 14px;
+    }
+
+    .search-actions {
+        gap: 8px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    /* Hide AI button on phones */
+    .ai-btn {
+        display: none;
+    }
+
+    /* Hide Gmail and Images links */
+    .header-right a:not(.signin-btn) {
+        display: none;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .buttons button {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .language {
+        text-align: center;
+        line-height: 2;
+        padding: 0 15px;
+    }
+
+    .country {
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        justify-content: center;
+    }
+
+    .apps-dropdown {
+        width: 220px;
+        right: 0;
+    }
+}
